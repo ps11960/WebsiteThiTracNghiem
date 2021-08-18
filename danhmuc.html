@@ -1,0 +1,74 @@
+<!doctype html> 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/frmdanhmuc.css">    
+    <title>Online Shopping Mall</title>
+  </head>  
+  <body>
+    <div class="container">
+      <div class="row">
+          <article class="mt-2">
+                <div class="section-title row">
+                  <h2 class="m-auto text-info">Danh Mục</h2>
+                </div>
+                <hr>
+              <div class="card-columns row">
+                <div class="row text-center text-lg-left">
+                  <div class="col-5 m-auto" ng-repeat="c in cacmonhoc | limitTo:4:current">
+                    <div class="card text-center">
+                      <img src="images/logos/{{c.Logo}}" class="card-img-top w-50 mt-2" alt="">
+                      <div class="card-footer text-center font-weight-bold">
+                          <a href="#!tracnghiem/{{c.Id}}/{{c.Name}}" class="text-dark"><p>{{c.Name}}</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--<div class="col-5 m-auto">
+                    <div class="card text-center">
+                      <img src="images/logos/WEBU.jpg" class="card-img-top w-50 mt-2" alt="">
+                      <div class="card-footer text-center font-weight-bold">
+                          <a href="question/qWEBU.html" class="text-dark"><p>Xây dựng trang Web</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-5 m-auto">
+                    <div class="card text-center m-auto">
+                      <img src="images/logos/DBBS.png" class="card-img-top w-50 mt-2" alt="">
+                      <div class="card-footer text-center font-weight-bold">
+                          <a href="question/qDBBS.html" class="text-dark"><p>Cơ sở dữ liệu</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-5 m-auto">
+                    <div class="card text-center m-auto">
+                      <img src="images/logos/DBAV.png" class="card-img-top w-50 mt-2" alt="">
+                      <div class="card-footer text-center font-weight-bold">
+                          <a href="question/qDBAV.html" class="text-dark"><p>SQL Server</p></a>
+                      </div>
+                    </div>
+                  </div>-->
+                </div>
+              </div>
+              <br>
+            <div class="row">
+              <ul class="pagination m-auto">
+                <li class="page-item mx-1">
+                    <a class="page-link" ng-click="back()"><i class="fa fa-hand-point-left"></i></a>
+                </li>
+                <li class="page-item mx-1">
+                    <a class="page-link" ng-click="next()"><i class="fa fa-hand-point-right"></i></a>
+                </li>
+              </ul>
+            </div>
+          </article>
+      </div>
+  </div>
+  <br>
+  </body>
+</html>
+<script src="js/jquery-3.3.1.min.js"> </script>
+<script src="js/popper.min.js" > </script>
+<script src="js/bootstrap.min.js"> </script>

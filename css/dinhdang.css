@@ -1,0 +1,28 @@
+header{
+    height:200px; background-color: mediumblue;
+}
+nav.row {
+    height: 60px; background-color: yellow;
+}
+footer {
+    height: 60px; background-color: grey;
+}
+.row > article {
+    min-height: auto;  background-color:azure;
+}
+.row > aside {
+    min-height: auto;  background-color:darkgrey;
+}
+header{
+    position: relative;
+}
+.jumbotron{
+    padding: 2rem 1rem;
+    background: #242134 linear-gradient(to right, #9E9ab4, #232134);
+}
+nav .float-right{
+    margin-left: 50%;
+}
+.container{
+    border: 2px solid grey;
+}

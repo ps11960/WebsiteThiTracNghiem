@@ -1,0 +1,41 @@
+<html>
+        <div ng-show="checklog()">
+            <div  ng-hide="going"  class="row mt-5 mb-5">
+                <button class="btn btn-primary m-auto" ng-click="goEvent();">Bắt đầu?</button>
+            </div>
+            <div ng-show="going">
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="float-left"><i class="fas fa-th-list"></i> {{tenMH}}</h6>
+                        <span class="badge badge-warning float-right text-white py-2 px-3">{{h}}:{{counter}}</span>
+                    </div>
+                    <div ng-repeat="ch in caccauhoi|limitTo:1:current">
+                        <div class="card-body">
+                            <p>{{current+1}}. {{ch.Text}}</p>
+                            <p class="card-text" ng-repeat="pa in ch.Answers">
+                                <input type="radio" name="pa" value="{{pa.Id}}" ng-click="checkdiem(pa.Id, ch.AnswerId)"> {{pa.Text}}
+                            </p>
+                        </div>
+                        <div class="card-footer text-muted">Điểm: {{diem}}/80</div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <ul class="pagination m-auto">
+                      <li class="page-item mx-1">
+                          <a class="page-link" ng-click="back()"><i class="fa fa-hand-point-left"></i></a>
+                      </li>
+                      <li class="page-item mx-1">
+                          <a class="page-link" ng-click="next()"><i class="fa fa-hand-point-right"></i></a>
+                      </li>
+                    </ul>
+                    <button ng-click="submit()" class="m-auto btn btn-danger">Kết Thúc</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div ng-hide="checklog()">
+            <H5 class="m-auto text-center">Vui lòng đăng nhập!</H5>
+        </div>
+    </div>
+</html>

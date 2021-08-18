@@ -1,0 +1,5 @@
+<ul class="list-group">
+    <li class="list-group-item" ng-repeat="mh in cacmonhoc|orderBy:'Name'">
+        <a ng-click="doimon()" class=" text-dark" href="#!tracnghiem/{{mh.Id}}/{{mh.Name}}">{{mh.Name|uppercase}}</a>
+    </li>
+</ul>

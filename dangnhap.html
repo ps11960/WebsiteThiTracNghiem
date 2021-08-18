@@ -1,0 +1,46 @@
+<!doctype html> <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/frmdangnhap.css">    
+    <title>Online Shopping Mall</title>
+  </head>   
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="mx-auto">
+          <div class="card card-signin my-5">
+            <div class="card-body">
+              <h5 class="card-title text-center">Đăng Nhập</h5>
+              <form class="form-signin" ng-controller="liststudent">
+                <div class="form-label-group">
+                  <input type="email" id="inputEmail" class="form-control" ng-model="u" placeholder="Email address" required autofocus>
+                  <label for="inputEmail">Địa chỉ Email</label>
+                </div>
+  
+                <div class="form-label-group">
+                  <input type="password" id="inputPassword" class="form-control" ng-model="p" placeholder="Password" required>
+                  <label for="inputPassword">Mật Khẩu</label>
+                </div>
+  
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Quên Mật Khẩu</label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block text-uppercase" ng-click="dn()" type="submit">Đăng Nhập</button>
+                <hr class="my-4">
+                <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Đăng nhập bằng Google</button>
+                <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Đăng nhập bằng Facebook</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="js/jquery-3.3.1.min.js"> </script>
+<script src="js/popper.min.js" > </script>
+<script src="js/bootstrap.min.js"> </script>
